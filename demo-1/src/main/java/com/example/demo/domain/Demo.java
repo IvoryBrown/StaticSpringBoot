@@ -5,8 +5,11 @@ public class Demo {
 	private String name = "Senki Béla";
 	private String profession = "Nagy világ";
 	private String author = "Copyright 2018 IvoryBrown";
-	private String welcomText = "Java | Swing | JavaFX | Spring Boot | JPA | H2 | Maven | MySQL";
-	private String welcomText1 = " Teszt";
+	private String welcomText = "Java | PHP | SQL";
+	private String welcomText1 = " JavaSE, JavaEE, JavaFX, Spring Boot, JDBC, JPA, H2, MySQL, Git, <br> Eclipse, STS, NetBeans, "
+			+ "XAMPP, WindowBuilder, Scene Builder, <br> Maven, Groovy";
+	private String introduction = "Bemutatkozás";
+	private String description = " :)";
 	
 
 	public Demo() {
@@ -58,6 +61,22 @@ public class Demo {
 
 	public void setWelcomText1(String welcomText1) {
 		this.welcomText1 = welcomText1;
+	}
+
+	public String getIntroduction() {
+		return introduction;
+	}
+
+	public void setIntroduction(String introduction) {
+		this.introduction = introduction;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 }

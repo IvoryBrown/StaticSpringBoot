@@ -112,7 +112,8 @@
 		<div class="banner-overlay"></div>
 		<div class="welcome-text">
 			<h2 th:text="${welcomText}">Simple Design | Personal Portfolio</h2>
-			<h5 th:text="${welcomText1}">This is a mobile friendly layout with Bootstrap v3.3.1
+		
+			<h5 th:utext="${welcomText1}">This is a mobile friendly layout with Bootstrap v3.3.1
 				framework. Maecenas eu ante at nunc posuere fringilla sit amet non
 				dolor. Proin condimentum fermentum nunc.</h5>
 		</div>
@@ -128,11 +129,11 @@
 				<div class="page-section" id="about">
 					<div class="row">
 						<div class="col-md-12">
-							<h4 class="widget-title">Learn About Me</h4>
+							<h4 th:text="${introduction}" class="widget-title">Learn About Me</h4>
 							<div class="about-image">
-								<img src="img/8.jpg" alt="about me">
+								<img src="img/e.jpg" alt="about me">
 							</div>
-							<p>
+							<p th:text="${description}">
 								Volton is free website design from <span class="blue">template</span><span
 									class="green">mo</span>. You can use this template for any
 								purpose. Please tell your friends about it. Thank you. Credit

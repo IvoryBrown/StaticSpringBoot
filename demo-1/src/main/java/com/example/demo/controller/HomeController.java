@@ -19,6 +19,8 @@ public class HomeController {
 		model.addAttribute("author", demo.getAuthor());
 		model.addAttribute("welcomText", demo.getWelcomText());
 		model.addAttribute("welcomText1", demo.getWelcomText1());
+		model.addAttribute("introduction", demo.getIntroduction());
+		model.addAttribute("description", demo.getDescription());
 		return "index";
 
 	}
